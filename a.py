@@ -9,7 +9,7 @@ def get_date(n, startdate):
 
 def main():
     c = 1
-    for i in reversed(range(0, 365)):
+    for i in range(0, 365):
         curdate = get_date(i, datetime.date.today())
         num_commits = c*10
         for commit in range(0, num_commits):
